@@ -1,0 +1,2 @@
+s1(19Jun2026:07:18:29):  xrun -sv -uvm -timescale 1ns/1ps -f filelist.f -access +rwc -messages -status -l xrun.log +UVM_TESTNAME=pcie_gen5_6_flit_mode_test +PCIE_MODE=RC +PCIE_SPEED=6 +PCIE_WIDTH=16 +PCIE_ERROR=NONE 
+s2(22Jun2026:02:17:09):  xrun -sv -uvm ../tb/pkg/pcie_gen5_6_types_pkg.sv ../tb/interfaces/pcie_pipe_if.sv ../tb/interfaces/pcie_tl_if.sv ../tb/interfaces/pcie_dl_if.sv ../tb/pkg/pcie_gen5_6_pkg.sv ../rtl/pcie_gen5_6_dut_stub.sv ../tb/top/tb_top.sv +UVM_TESTNAME=pcie_gen5_6_mem_rd_wr_directed_test +UVM_VERBOSITY=UVM_LOW -access +rw -l sim.log 

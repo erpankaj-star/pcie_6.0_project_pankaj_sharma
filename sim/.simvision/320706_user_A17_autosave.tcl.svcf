@@ -1,0 +1,222 @@
+
+#
+# Preferences
+#
+preferences set plugin-enable-svdatabrowser-new 1
+preferences set toolbar-sendToIndago-WaveWindow {
+  usual
+  position -pos 1
+}
+preferences set toolbar-Standard-Console {
+  usual
+  position -pos 1
+}
+preferences set toolbar-Search-Console {
+  usual
+  position -pos 2
+}
+preferences set plugin-enable-groupscope 0
+preferences set plugin-enable-interleaveandcompare 0
+preferences set plugin-enable-waveformfrequencyplot 0
+preferences set whats-new-dont-show-at-startup 1
+
+#
+# Databases
+#
+database require waves -search {
+	./waves.shm/waves.trn
+	/home/user/siddharth_dv/pcie_gen5_6_project/pcie_gen5_6_uvm_pipe_project_v2/sim/waves.shm/waves.trn
+}
+
+#
+# Mnemonic Maps
+#
+mmap new -reuse -name {Boolean as Logic} -radix %b -contents {{%c=FALSE -edgepriority 1 -shape low}
+{%c=TRUE -edgepriority 1 -shape high}}
+mmap new -reuse -name {Example Map} -radix %x -contents {{%b=11???? -bgcolor orange -label REG:%x -linecolor yellow -shape bus}
+{%x=1F -bgcolor red -label ERROR -linecolor white -shape EVENT}
+{%x=2C -bgcolor red -label ERROR -linecolor white -shape EVENT}
+{%x=* -label %x -linecolor gray -shape bus}}
+
+#
+# Waveform windows
+#
+if {[catch {window new WaveWindow -name "Waveform 1" -geometry 1920x1016+-1+26}] != ""} {
+    window geometry "Waveform 1" 1920x1016+-1+26
+}
+window target "Waveform 1" on
+waveform using {Waveform 1}
+waveform sidebar select designbrowser
+waveform set \
+    -primarycursor TimeA \
+    -signalnames name \
+    -signalwidth 175 \
+    -units ns \
+    -valuewidth 125
+waveform baseline set -time 0
+
+set id [waveform add -signals  {
+	waves::tb_top.pipe_if.deskew_done
+	} ]
+set id [waveform add -signals  {
+	waves::tb_top.pipe_if.dl_state
+	} ]
+set id [waveform add -signals  {
+	waves::tb_top.pipe_if.eq_phase_done
+	} ]
+set id [waveform add -signals  {
+	waves::tb_top.pipe_if.equalization_in_progress
+	} ]
+set id [waveform add -signals  {
+	waves::tb_top.pipe_if.error_indication
+	} ]
+set id [waveform add -signals  {
+	waves::tb_top.pipe_if.flit_mode_active
+	} ]
+set id [waveform add -signals  {
+	waves::tb_top.pipe_if.injected_error
+	} ]
+set id [waveform add -signals  {
+	waves::tb_top.pipe_if.lane_reversal_detected
+	} ]
+set id [waveform add -signals  {
+	waves::tb_top.pipe_if.link_up
+	} ]
+set id [waveform add -signals  {
+	waves::tb_top.pipe_if.ltssm_state
+	} ]
+set id [waveform add -signals  {
+	waves::tb_top.pipe_if.negotiated_speed
+	} ]
+set id [waveform add -signals  {
+	waves::tb_top.pipe_if.negotiated_width
+	} ]
+waveform hierarchy collapse $id
+set id [waveform add -signals  {
+	{waves::tb_top.pipe_if.pam4_symbol[15:0]}
+	} ]
+waveform format $id -radix %x
+set id [waveform add -signals  {
+	waves::tb_top.pipe_if.pclk
+	} ]
+set id [waveform add -signals  {
+	waves::tb_top.pipe_if.phy_mode_flit
+	} ]
+set id [waveform add -signals  {
+	waves::tb_top.pipe_if.phy_status
+	} ]
+set id [waveform add -signals  {
+	waves::tb_top.pipe_if.pipe_stall
+	} ]
+set id [waveform add -signals  {
+	{waves::tb_top.pipe_if.power_down[2:0]}
+	} ]
+set id [waveform add -signals  {
+	waves::tb_top.pipe_if.precoding_enable
+	} ]
+set id [waveform add -signals  {
+	{waves::tb_top.pipe_if.rate[3:0]}
+	} ]
+set id [waveform add -signals  {
+	waves::tb_top.pipe_if.rate_change_ack
+	} ]
+set id [waveform add -signals  {
+	waves::tb_top.pipe_if.reset_n
+	} ]
+set id [waveform add -signals  {
+	waves::tb_top.pipe_if.retimer_present
+	} ]
+set id [waveform add -signals  {
+	{waves::tb_top.pipe_if.rx_block_align[15:0]}
+	} ]
+set id [waveform add -signals  {
+	{waves::tb_top.pipe_if.rx_data[15:0]}
+	} ]
+set id [waveform add -signals  {
+	{waves::tb_top.pipe_if.rx_datak[15:0]}
+	} ]
+set id [waveform add -signals  {
+	{waves::tb_top.pipe_if.rx_elec_idle[15:0]}
+	} ]
+set id [waveform add -signals  {
+	{waves::tb_top.pipe_if.rx_lane_aligned[15:0]}
+	} ]
+set id [waveform add -signals  {
+	{waves::tb_top.pipe_if.rx_margin_status[15:0]}
+	} ]
+set id [waveform add -signals  {
+	{waves::tb_top.pipe_if.rx_polarity_inverted[15:0]}
+	} ]
+set id [waveform add -signals  {
+	{waves::tb_top.pipe_if.rx_start_block[15:0]}
+	} ]
+set id [waveform add -signals  {
+	{waves::tb_top.pipe_if.rx_status[15:0]}
+	} ]
+set id [waveform add -signals  {
+	{waves::tb_top.pipe_if.rx_symbol_lock[15:0]}
+	} ]
+set id [waveform add -signals  {
+	{waves::tb_top.pipe_if.rx_sync_header[15:0]}
+	} ]
+set id [waveform add -signals  {
+	{waves::tb_top.pipe_if.rx_valid[15:0]}
+	} ]
+set id [waveform add -signals  {
+	waves::tb_top.pipe_if.scrambling_enable
+	} ]
+set id [waveform add -signals  {
+	{waves::tb_top.pipe_if.tx_compliance[15:0]}
+	} ]
+set id [waveform add -signals  {
+	{waves::tb_top.pipe_if.tx_data[15:0]}
+	} ]
+set id [waveform add -signals  {
+	{waves::tb_top.pipe_if.tx_datak[15:0]}
+	} ]
+set id [waveform add -signals  {
+	{waves::tb_top.pipe_if.tx_deemph[15:0]}
+	} ]
+set id [waveform add -signals  {
+	{waves::tb_top.pipe_if.tx_detect_rx_loopback[15:0]}
+	} ]
+set id [waveform add -signals  {
+	{waves::tb_top.pipe_if.tx_elec_idle[15:0]}
+	} ]
+set id [waveform add -signals  {
+	{waves::tb_top.pipe_if.tx_margin[15:0]}
+	} ]
+set id [waveform add -signals  {
+	waves::tb_top.pipe_if.tx_ones_zeroes
+	} ]
+set id [waveform add -signals  {
+	{waves::tb_top.pipe_if.tx_polarity[15:0]}
+	} ]
+set id [waveform add -signals  {
+	{waves::tb_top.pipe_if.tx_start_block[15:0]}
+	} ]
+set id [waveform add -signals  {
+	{waves::tb_top.pipe_if.tx_sync_header[15:0]}
+	} ]
+set id [waveform add -signals  {
+	{waves::tb_top.pipe_if.tx_valid[15:0]}
+	} ]
+set id [waveform add -signals  {
+	{waves::tb_top.pipe_if.width[4:0]}
+	} ]
+
+waveform xview limits 0 15.046ns
+
+#
+# Waveform Window Links
+#
+
+#
+# Console windows
+#
+console set -windowname Console
+window geometry Console 600x250+0+0
+
+#
+# Layout selection
+#

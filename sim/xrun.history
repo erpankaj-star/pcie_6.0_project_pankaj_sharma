@@ -1,0 +1,1 @@
+s1(03Jul2026:05:48:29):  xrun -sv -uvm -timescale 1ns/1ps -f filelist.f -access +rwc -messages -status -l xrun.log +UVM_TESTNAME=pcie_gen5_6_flit_mode_test +PCIE_MODE=RC +PCIE_SPEED=6 +PCIE_WIDTH=16 +PCIE_ERROR=NONE 
