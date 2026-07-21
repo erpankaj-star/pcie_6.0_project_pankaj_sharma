@@ -11,6 +11,7 @@ run:
 	-timescale 1ns/1ps \
 	-f filelist.f \
 	-access +rwc \
+	-input	waves.tcl	\
 	-messages \
 	-status \
 	-l xrun.log \
@@ -33,3 +34,9 @@ run:
 #  	+UVM_VERBOSITY=UVM_LOW \
 #  	-access +rw \
 #  	-l sim.log
+
+.PHONY: clean
+
+clean:
+	rm -rf xcelium.d INCA_libs waves.shm
+	rm -f xrun.log sim.log xrun.history sim.history *.diag
