@@ -25,6 +25,12 @@ module tb_top;
     reset_n = 1'b1;
   end
 
+
+// initial begin
+// $shm_open("waves.shm");
+// $shm_probe("AC"); // "AC" probes all signals and hierarchy recursively
+// end
+
   pcie_pipe_if #(.LANES(PCIE_MAX_LANES), .DATA_W(PCIE_PIPE_DATA_W)) pipe_if (
     .pclk(pipe_clk),
     .reset_n(reset_n)

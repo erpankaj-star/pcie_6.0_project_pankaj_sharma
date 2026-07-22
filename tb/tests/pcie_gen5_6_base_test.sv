@@ -43,6 +43,14 @@ class pcie_gen5_6_base_test extends uvm_test;
     end
   endfunction
 
+function void end_of_elaboration_phase(uvm_phase phase);
+uvm_factory factory = uvm_factory::get();
+super.end_of_elaboration_phase(phase);
+factory.print();
+uvm_top.print_topology();
+endfunction
+
+
   task run_phase(uvm_phase phase);
     pcie_gen5_6_link_training_seq seq;
     phase.raise_objection(this);
