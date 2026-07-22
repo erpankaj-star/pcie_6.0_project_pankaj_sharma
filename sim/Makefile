@@ -38,5 +38,5 @@ run:
 .PHONY: clean
 
 clean:
-	rm -rf xcelium.d INCA_libs waves.shm
+	rm -rf xcelium.d INCA_libs waves.shm	cov_work/
 	rm -f xrun.log sim.log xrun.history sim.history *.diag

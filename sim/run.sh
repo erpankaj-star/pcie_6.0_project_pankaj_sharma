@@ -3,6 +3,9 @@ run:
 	-timescale 1ns/1ps \
 	-f filelist.f \
 	-access +rwc \
+  -coverage all \
+  -covoverwrite \
+  -covreport  html  -covreportdir ./cov_html_report \
 	-input ./waves.tcl \
 	+UVM_TESTNAME=$(TEST) \
 	+PCIE_MODE=$(MODE) \

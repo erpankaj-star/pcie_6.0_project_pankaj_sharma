@@ -1,0 +1,78 @@
+03:45:35:0237 [com.cadence.mdv.imc.Main] [main] INFO  - Binding debug tools http on port: 35229
+03:45:35:0269 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool] ERROR - invalid command name "report_html".
+03:45:35:0269 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool] ERROR - Merge output directory cov_work/scope/merged_regression_db could not be created because either the parent directory does not exist, or the parent directory has no write permission. Make sure that the parent directory exists and has write permission before you rerun the command.
+03:47:08:0028 [com.cadence.mdv.imc.Main] [main] INFO  - Binding debug tools http on port: 37047
+04:29:23:0505 [com.cadence.mdv.imc.Main] [main] INFO  - Binding debug tools http on port: 45139
+04:29:23:0541 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool] ERROR - Merge output directory cov_work/scope/merged_regression_db could not be created because either the parent directory does not exist, or the parent directory has no write permission. Make sure that the parent directory exists and has write permission before you rerun the command.
+04:29:23:0541 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool] ERROR - invalid command name "report_html".
+05:16:15:0299 [com.cadence.mdv.imc.Main] [main] INFO  - Binding debug tools http on port: 46293
+05:16:15:0330 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool] ERROR - None of the input runs has a valid model - merge aborted.
+05:16:15:0330 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool] ERROR - Target model generation failed.
+05:16:15:0330 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool] ERROR - IUS coverage merging failed.
+05:16:15:0331 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool] ERROR - Directory './cov_work/merged_db' not found. Verify the existence of the specified directory, and rerun the command
+05:16:15:0336 [com.cadence.mdv.cli.engine.CLIEnvironment] [BLNativeThread-1] ERROR - command reportMetricsIMC failed
+
+report.illegal_metric: 'expr' is an illegal value for -metrics option. Valid values are all, code, fsm, functional, block, expression, toggle, state, transition, arc, assertion, covergroup.
+	at com.cadence.mdv.cli.commands.ReportMetricsCmd.handelMetrics(ReportMetricsCmd.java:263)
+	at com.cadence.mdv.cli.commands.ReportMetricsIMCCmd.internalInvoke(ReportMetricsIMCCmd.java:42)
+	at com.cadence.mdv.cli.commands.BaseCliJavaCMD.invoke(BaseCliJavaCMD.java:136)
+	at com.cadence.mdv.cli.commands.BaseCliJavaCMD.invoke(BaseCliJavaCMD.java:141)
+	at com.cadence.mdv.cli.engine.CLIEnvironment.runJavaCmd(CLIEnvironment.java:226)
+	at com.cadence.mdv.bl.impl.core.blNative.BLNative.runCommandNative(Native Method)
+	at com.cadence.mdv.bl.impl.core.blNative.BLNative.access$18(BLNative.java:1148)
+	at com.cadence.mdv.bl.impl.core.blNative.BLNative$52.callInternal(BLNative.java:1161)
+	at com.cadence.mdv.util.CallableWithSource.call(CallableWithSource.java:25)
+	at com.cadence.mdv.util.NestedOnCallerExecuter.lambda$0(NestedOnCallerExecuter.java:66)
+	at com.cadence.mdv.util.NestedOnCallerExecuter$$Lambda$18/318020776.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+05:16:15:0337 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool] ERROR - 'expr' is an illegal value for -metrics option. Valid values are all, code, fsm, functional, block, expression, toggle, state, transition, arc, assertion, covergroup.
+05:26:07:0694 [com.cadence.mdv.imc.Main] [main] INFO  - Binding debug tools http on port: 44303
+05:26:07:0725 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool] ERROR - None of the input runs has a valid model - merge aborted.
+05:26:07:0725 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool] ERROR - Target model generation failed.
+05:26:07:0725 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool] ERROR - IUS coverage merging failed.
+05:26:07:0725 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool] ERROR - Directory './cov_work/merged_db' not found. Verify the existence of the specified directory, and rerun the command
+05:26:07:0730 [com.cadence.mdv.cli.engine.CLIEnvironment] [BLNativeThread-1] ERROR - command reportMetricsIMC failed
+
+report.illegal_metric: 'expr' is an illegal value for -metrics option. Valid values are all, code, fsm, functional, block, expression, toggle, state, transition, arc, assertion, covergroup.
+	at com.cadence.mdv.cli.commands.ReportMetricsCmd.handelMetrics(ReportMetricsCmd.java:263)
+	at com.cadence.mdv.cli.commands.ReportMetricsIMCCmd.internalInvoke(ReportMetricsIMCCmd.java:42)
+	at com.cadence.mdv.cli.commands.BaseCliJavaCMD.invoke(BaseCliJavaCMD.java:136)
+	at com.cadence.mdv.cli.commands.BaseCliJavaCMD.invoke(BaseCliJavaCMD.java:141)
+	at com.cadence.mdv.cli.engine.CLIEnvironment.runJavaCmd(CLIEnvironment.java:226)
+	at com.cadence.mdv.bl.impl.core.blNative.BLNative.runCommandNative(Native Method)
+	at com.cadence.mdv.bl.impl.core.blNative.BLNative.access$18(BLNative.java:1148)
+	at com.cadence.mdv.bl.impl.core.blNative.BLNative$52.callInternal(BLNative.java:1161)
+	at com.cadence.mdv.util.CallableWithSource.call(CallableWithSource.java:25)
+	at com.cadence.mdv.util.NestedOnCallerExecuter.lambda$0(NestedOnCallerExecuter.java:66)
+	at com.cadence.mdv.util.NestedOnCallerExecuter$$Lambda$18/318020776.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+05:26:07:0731 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool] ERROR - 'expr' is an illegal value for -metrics option. Valid values are all, code, fsm, functional, block, expression, toggle, state, transition, arc, assertion, covergroup.
+05:26:17:0500 [com.cadence.mdv.imc.Main] [main] INFO  - Binding debug tools http on port: 39249
+05:26:34:0049 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool] ERROR - invalid command name "imc".
+05:30:05:0289 [com.cadence.mdv.imc.Main] [main] INFO  - Binding debug tools http on port: 44263
+05:30:05:0317 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool] ERROR - Error loading database file cov_work/scope/icc_1fe7b6ee_4fc64bb4.ucm:
+serialization exception.
+05:30:05:0317 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool] ERROR - Valid data file not found for run directory cov_work/scope/test. Specify a valid run directory with correct ucm, ucd files and rerun the command.	   
+05:30:15:0138 [com.cadence.mdv.imc.Main] [main] INFO  - Binding debug tools http on port: 46225
+05:30:15:0168 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool] ERROR - Valid data file not found for run directory cov_work/scope/test. Specify a valid run directory with correct ucm, ucd files and rerun the command.	   
+05:30:15:0168 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool] ERROR - Error loading database file cov_work/scope/icc_1fe7b6ee_4fc64bb4.ucm:
+serialization exception.
+05:38:01:0222 [com.cadence.mdv.imc.Main] [main] INFO  - Binding debug tools http on port: 43683
+05:38:01:0248 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool] ERROR - Error loading database file cov_work/scope/icc_1fe7b6ee_4fc64bb4.ucm:
+serialization exception.
+05:38:01:0248 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool] ERROR - Valid data file not found for run directory cov_work/scope/test. Specify a valid run directory with correct ucm, ucd files and rerun the command.	   
+05:58:53:0750 [com.cadence.mdv.imc.Main] [main] INFO  - Binding debug tools http on port: 37233
+05:58:53:0777 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool] ERROR - Cannot read directory cov_work/scope/test. Check if the directory has read permission, and rerun the command	   
+05:58:53:0777 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool] ERROR - Valid model file not found for run directory cov_work/scope/test. Specify a valid run directory with correct ucm, ucd files and rerun the command.
+06:00:23:0612 [com.cadence.mdv.imc.Main] [main] INFO  - Binding debug tools http on port: 32991
+06:00:23:0640 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool] ERROR - Cannot read directory cove_work/Scope/test. Check if the directory has read permission, and rerun the command	   
+06:00:23:0640 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool] ERROR - Valid model file not found for run directory cove_work/Scope/test. Specify a valid run directory with correct ucm, ucd files and rerun the command.
+06:30:41:0882 [com.cadence.mdv.imc.Main] [main] INFO  - Binding debug tools http on port: 45815
+06:30:41:0912 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool] ERROR - Cannot read directory cove_work/Scope/test. Check if the directory has read permission, and rerun the command	   
+06:30:41:0912 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool] ERROR - Valid model file not found for run directory cove_work/Scope/test. Specify a valid run directory with correct ucm, ucd files and rerun the command.

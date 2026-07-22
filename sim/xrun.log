@@ -1,0 +1,448 @@
+xrun(64): 22.09-s003: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	22.09-s003: Started on Jul 22, 2026 at 05:59:55 EDT
+xrun
+	-sv
+	-uvm
+	-timescale 1ns/1ps
+	-f filelist.f
+		+incdir+../tb/pkg
+		+incdir+../tb/sequence_items
+		+incdir+../tb/env
+		+incdir+../tb/sequences
+		+incdir+../tb/drivers
+		+incdir+../tb/monitors
+		+incdir+../tb/tests
+		../tb/pkg/pcie_gen5_6_types_pkg.sv
+		../tb/interfaces/pcie_pipe_if.sv
+		../tb/interfaces/pcie_tl_if.sv
+		../tb/interfaces/pcie_dl_if.sv
+		../tb/pkg/pcie_gen5_6_pkg.sv
+		../rtl/pcie_gen5_6_dut_stub.sv
+		../tb/assertions/pcie_gen5_6_pipe_assertions.sv
+		../tb/assertions/pcie_gen5_6_tl_assertions.sv
+		../tb/assertions/pcie_gen5_6_dl_assertions.sv
+		../tb/assertions/pcie_gen5_6_ltssm_assertions.sv
+		../tb/top/tb_top.sv
+	-access +rwc
+	-input waves.tcl
+	-messages
+	-status
+	-l xrun.log
+	+UVM_TESTNAME=pcie_gen5_6_flit_mode_test
+	+PCIE_MODE=RC
+	+PCIE_SPEED=6
+	+PCIE_WIDTH=16
+	+PCIE_ERROR=NONE
+
+   User defined plus("+") options:
+	+PCIE_MODE=RC
+	+PCIE_SPEED=6
+	+PCIE_WIDTH=16
+	+PCIE_ERROR=NONE
+
+DEFINE AES256_90nm_Project /home/user/AES256_90nm_Project
+|
+xrun: *W,DLCLAP (/home/user/cds.lib,3): cds.lib Same file has different definitions for library 'library AES256_90nm_Project from /home/user/cds.lib line 3, redefines
+    library AES256_90nm_Project from same file line 2 defined earlier.' (continuing with last specified path).
+DEFINE AES256_90nm_Project /home/user/AES256_90nm_Project
+|
+xrun: *W,DLCLAP (/home/user/cds.lib,3): cds.lib Same file has different definitions for library 'library AES256_90nm_Project from /home/user/cds.lib line 3, redefines
+    library AES256_90nm_Project from same file line 2 defined earlier.' (continuing with last specified path).
+DEFINE AES256_90nm_Project /home/user/AES256_90nm_Project
+|
+xrun: *W,DLCLAP (/home/user/cds.lib,3): cds.lib Same file has different definitions for library 'library AES256_90nm_Project from /home/user/cds.lib line 3, redefines
+    library AES256_90nm_Project from same file line 2 defined earlier.' (continuing with last specified path).
+DEFINE AES256_90nm_Project /home/user/AES256_90nm_Project
+|
+xrun: *W,DLCLAP (/home/user/cds.lib,3): cds.lib Same file has different definitions for library 'library AES256_90nm_Project from /home/user/cds.lib line 3, redefines
+    library AES256_90nm_Project from same file line 2 defined earlier.' (continuing with last specified path).
+DEFINE AES256_90nm_Project /home/user/AES256_90nm_Project
+|
+xrun: *W,DLCLAP (/home/user/cds.lib,3): cds.lib Same file has different definitions for library 'library AES256_90nm_Project from /home/user/cds.lib line 3, redefines
+    library AES256_90nm_Project from same file line 2 defined earlier.' (continuing with last specified path).
+Compiling UVM packages (uvm_pkg.sv cdns_uvm_pkg.sv) using uvmhome location /home/install/XCELIUM2209/tools/methodology/UVM/CDNS-1.1d
+DEFINE AES256_90nm_Project /home/user/AES256_90nm_Project
+|
+xmvlog: *W,DLCLAP (/home/user/cds.lib,3): cds.lib Same file has different definitions for library 'library AES256_90nm_Project from /home/user/cds.lib line 3, redefines
+    library AES256_90nm_Project from same file line 2 defined earlier.' (continuing with last specified path).
+xmvlog: Memory Usage - Current physical: 55.1M, Current virtual: 86.0M
+xmvlog: CPU Usage - 0.0s system + 0.2s user = 0.3s total (0.3s, 96.9% cpu)
+DEFINE AES256_90nm_Project /home/user/AES256_90nm_Project
+|
+xmvlog: *W,DLCLAP (/home/user/cds.lib,3): cds.lib Same file has different definitions for library 'library AES256_90nm_Project from /home/user/cds.lib line 3, redefines
+    library AES256_90nm_Project from same file line 2 defined earlier.' (continuing with last specified path).
+file: ../tb/pkg/pcie_gen5_6_types_pkg.sv
+	package worklib.pcie_gen5_6_types_pkg:sv
+		errors: 0, warnings: 0
+file: ../tb/interfaces/pcie_pipe_if.sv
+    default input #1step output #1step;
+                                     |
+xmvlog: *W,SAWSTP (../tb/interfaces/pcie_pipe_if.sv,68|37): Time unit "step" seen in literal - using local precision.
+    default input #1step output #1step;
+                                     |
+xmvlog: *W,SAWSTP (../tb/interfaces/pcie_pipe_if.sv,81|37): Time unit "step" seen in literal - using local precision.
+	interface worklib.pcie_pipe_if:sv
+		errors: 0, warnings: 2
+file: ../tb/interfaces/pcie_tl_if.sv
+	interface worklib.pcie_tl_if:sv
+		errors: 0, warnings: 0
+file: ../tb/interfaces/pcie_dl_if.sv
+	interface worklib.pcie_dl_if:sv
+		errors: 0, warnings: 0
+file: ../tb/pkg/pcie_gen5_6_pkg.sv
+	package worklib.pcie_gen5_6_pkg:sv
+		errors: 0, warnings: 0
+file: ../rtl/pcie_gen5_6_dut_stub.sv
+	module worklib.pcie_gen5_6_dut_stub:sv
+		errors: 0, warnings: 0
+file: ../tb/assertions/pcie_gen5_6_pipe_assertions.sv
+	module worklib.pcie_gen5_6_pipe_assertions:sv
+		errors: 0, warnings: 0
+file: ../tb/assertions/pcie_gen5_6_tl_assertions.sv
+	module worklib.pcie_gen5_6_tl_assertions:sv
+		errors: 0, warnings: 0
+file: ../tb/assertions/pcie_gen5_6_dl_assertions.sv
+	module worklib.pcie_gen5_6_dl_assertions:sv
+		errors: 0, warnings: 0
+file: ../tb/assertions/pcie_gen5_6_ltssm_assertions.sv
+	module worklib.pcie_gen5_6_ltssm_assertions:sv
+		errors: 0, warnings: 0
+file: ../tb/top/tb_top.sv
+	module worklib.tb_top:sv
+		errors: 0, warnings: 0
+xmvlog: *W,SPDUSD: Include directory ../tb/sequence_items given but not used.
+xmvlog: *W,SPDUSD: Include directory ../tb/env given but not used.
+xmvlog: *W,SPDUSD: Include directory ../tb/sequences given but not used.
+xmvlog: *W,SPDUSD: Include directory ../tb/drivers given but not used.
+xmvlog: *W,SPDUSD: Include directory ../tb/monitors given but not used.
+xmvlog: *W,SPDUSD: Include directory ../tb/tests given but not used.
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 7
+xmvlog: Memory Usage - Current physical: 45.6M, Current virtual: 76.2M
+xmvlog: CPU Usage - 0.0s system + 0.1s user = 0.1s total (0.1s, 92.2% cpu)
+DEFINE AES256_90nm_Project /home/user/AES256_90nm_Project
+|
+xrun: *W,DLCLAP (/home/user/cds.lib,3): cds.lib Same file has different definitions for library 'library AES256_90nm_Project from /home/user/cds.lib line 3, redefines
+    library AES256_90nm_Project from same file line 2 defined earlier.' (continuing with last specified path).
+DEFINE AES256_90nm_Project /home/user/AES256_90nm_Project
+|
+xrun: *W,DLCLAP (/home/user/cds.lib,3): cds.lib Same file has different definitions for library 'library AES256_90nm_Project from /home/user/cds.lib line 3, redefines
+    library AES256_90nm_Project from same file line 2 defined earlier.' (continuing with last specified path).
+DEFINE AES256_90nm_Project /home/user/AES256_90nm_Project
+|
+xmelab: *W,DLCLAP (/home/user/cds.lib,3): cds.lib Same file has different definitions for library 'library AES256_90nm_Project from /home/user/cds.lib line 3, redefines
+    library AES256_90nm_Project from same file line 2 defined earlier.' (continuing with last specified path).
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		uvm_pkg
+		cdns_uvmapi
+		cdns_assert2uvm_pkg
+		cdns_uvm_pkg
+		pcie_gen5_6_types_pkg
+		pcie_gen5_6_pkg
+		tb_top
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+DEFINE AES256_90nm_Project /home/user/AES256_90nm_Project
+|
+xmvlog_cg: *W,DLCLAP (/home/user/cds.lib,3): cds.lib Same file has different definitions for library 'library AES256_90nm_Project from /home/user/cds.lib line 3, redefines
+    library AES256_90nm_Project from same file line 2 defined earlier.' (continuing with last specified path).
+		worklib.pcie_gen5_6_ltssm_assertions:sv <0x573f5c30>
+			streams:  11, words:  9754
+		worklib.pcie_gen5_6_dl_assertions:sv <0x1ce6bc01>
+			streams:  16, words: 11630
+		worklib.pcie_gen5_6_tl_assertions:sv <0x033c3507>
+			streams:  16, words: 11203
+		worklib.pcie_gen5_6_pipe_assertions:sv <0x5f359b18>
+			streams:  16, words: 15058
+		worklib.pcie_gen5_6_dut_stub:sv <0x0d49ace0>
+			streams:   7, words: 20818
+		worklib.tb_top:sv <0x1302a4db>
+			streams: 1814, words: 2767461
+		worklib.pcie_tl_if:sv <0x27f2d961>
+			streams:   0, words:     0
+		worklib.pcie_pipe_if:sv <0x773349af>
+			streams: 133, words: 81845
+		worklib.cdns_uvm_pkg:sv <0x467afda5>
+			streams: 172, words: 275801
+		worklib.cdns_uvmapi:svp <0x6dcebdd9>
+			streams:  27, words: 30300
+		worklib.cdns_assert2uvm_pkg:sv <0x2ad9907b>
+			streams:   3, words:  1777
+		worklib.uvm_pkg:sv <0x13ebfbff>
+			streams: 4536, words: 7087305
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                       Instances  Unique
+		Modules:                       6       6
+		Interfaces:                    3       3
+		Verilog packages:              6       6
+		Registers:                 17175   11072
+		Scalar wires:                  8       -
+		Named events:                  4      12
+		Always blocks:                92      92
+		Initial blocks:              389     205
+		Clocking blocks:               2       2
+		Clocking items:               85      85
+		Parallel blocks:              26      27
+		Pseudo assignments:            3       3
+		Assertions:                   20      20
+		Covergroup Instances:          0       1
+		SV Class declarations:       220     333
+		SV Class specializations:    484     484
+		Simulation timescale:        1ps
+	Writing initial simulation snapshot: worklib.tb_top:sv
+xmelab: Memory Usage - Final: 96.5M, Peak: 99.5M, Peak virtual: 174.9M
+xmelab: CPU Usage - 0.1s system + 1.7s user = 1.8s total (1.8s, 98.7% cpu)
+DEFINE AES256_90nm_Project /home/user/AES256_90nm_Project
+|
+xmsim: *W,DLCLAP (/home/user/cds.lib,3): cds.lib Same file has different definitions for library 'library AES256_90nm_Project from /home/user/cds.lib line 3, redefines
+    library AES256_90nm_Project from same file line 2 defined earlier.' (continuing with last specified path).
+Loading snapshot worklib.tb_top:sv .................... Done
+SVSEED default: 1
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /home/install/XCELIUM2209/tools/xcelium/files/xmsimrc
+xcelium> source /home/install/XCELIUM2209/tools/methodology/UVM/CDNS-1.1d/additions/sv/files/tcl/uvm_sim.tcl
+xcelium> #database -open  waves -into -default waves.shm # this is wrong order
+xcelium> 
+xcelium> database -open waves -into waves.shm -default
+Created default SHM database waves
+xcelium> 
+xcelium> probe -create -shm -all -depth all tb_top
+xmsim: *W,PRLDYN: The design contains dynamic objects. The "-all" option excludes dynamic objects to improve performance. To enable probing of dynamic objects the "-all -dynamic" options should be added to the probe command.
+Created probe 1
+xcelium> 
+xcelium> run
+----------------------------------------------------------------
+CDNS-UVM-1.1d (22.09-s003)
+(C) 2007-2013 Mentor Graphics Corporation
+(C) 2007-2013 Cadence Design Systems, Inc.
+(C) 2006-2013 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO @ 0: reporter [RNTST] Running test pcie_gen5_6_flit_mode_test...
+
+#### Factory Configuration (*)
+
+  No instance or type overrides are registered with this factory
+
+All types registered with the factory: 66 total
+(types without type names will not be printed)
+
+  Type Name
+  ---------
+  pcie_cfg_item
+  pcie_dlp_item
+  pcie_flit_item
+  pcie_gen5_6_base_seq
+  pcie_gen5_6_base_test
+  pcie_gen5_6_cfg
+  pcie_gen5_6_coverage
+  pcie_gen5_6_dl_agent
+  pcie_gen5_6_dl_driver
+  pcie_gen5_6_dl_monitor
+  pcie_gen5_6_env
+  pcie_gen5_6_flit_mode_entry_directed_seq
+  pcie_gen5_6_flit_mode_entry_random_seq
+  pcie_gen5_6_flit_mode_entry_seq_base
+  pcie_gen5_6_flit_mode_test
+  pcie_gen5_6_link_training_seq
+  pcie_gen5_6_pipe_agent
+  pcie_gen5_6_pipe_driver
+  pcie_gen5_6_pipe_monitor
+  pcie_gen5_6_ref_model
+  pcie_gen5_6_scoreboard
+  pcie_gen5_6_tl_agent
+  pcie_gen5_6_tl_driver
+  pcie_gen5_6_tl_monitor
+  pcie_gen5_6_virtual_sequencer
+  pcie_pipe_symbol_item
+  pcie_tlp_item
+(*) Types with no associated type name will be printed as <unknown>
+
+####
+
+UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+---------------------------------------------------------------------
+Name                       Type                           Size  Value
+---------------------------------------------------------------------
+uvm_test_top               pcie_gen5_6_flit_mode_test     -     @2815
+  env                      pcie_gen5_6_env                -     @2889
+    coverage               pcie_gen5_6_coverage           -     @3934
+      analysis_imp         uvm_analysis_imp               -     @4033
+    dl_agent               pcie_gen5_6_dl_agent           -     @3082
+      ap                   uvm_analysis_port              -     @3132
+      driver               pcie_gen5_6_dl_driver          -     @4736
+        rsp_port           uvm_analysis_port              -     @4835
+        seq_item_port      uvm_seq_item_pull_port         -     @4786
+      monitor              pcie_gen5_6_dl_monitor         -     @4815
+        ap                 uvm_analysis_port              -     @4914
+      sequencer            uvm_sequencer                  -     @4099
+        rsp_export         uvm_analysis_export            -     @4157
+        seq_item_export    uvm_seq_item_pull_imp          -     @4705
+        arbitration_queue  array                          0     -    
+        lock_queue         array                          0     -    
+        num_last_reqs      integral                       32    'd1  
+        num_last_rsps      integral                       32    'd1  
+    pipe_agent             pcie_gen5_6_pipe_agent         -     @2921
+      ap                   uvm_analysis_port              -     @2970
+      driver               pcie_gen5_6_pipe_driver        -     @5610
+        rsp_port           uvm_analysis_port              -     @5709
+        seq_item_port      uvm_seq_item_pull_port         -     @5660
+      monitor              pcie_gen5_6_pipe_monitor       -     @5689
+        ap                 uvm_analysis_port              -     @5788
+      sequencer            uvm_sequencer                  -     @4973
+        rsp_export         uvm_analysis_export            -     @5031
+        seq_item_export    uvm_seq_item_pull_imp          -     @5579
+        arbitration_queue  array                          0     -    
+        lock_queue         array                          0     -    
+        num_last_reqs      integral                       32    'd1  
+        num_last_rsps      integral                       32    'd1  
+    ref_model              pcie_gen5_6_ref_model          -     @4064
+    scoreboard             pcie_gen5_6_scoreboard         -     @3803
+      dl_imp               uvm_analysis_imp_dl            -     @3905
+      pipe_imp             uvm_analysis_imp_pipe          -     @3954
+      tl_imp               uvm_analysis_imp_tl            -     @3856
+    tl_agent               pcie_gen5_6_tl_agent           -     @3001
+      ap                   uvm_analysis_port              -     @3051
+      driver               pcie_gen5_6_tl_driver          -     @6485
+        rsp_port           uvm_analysis_port              -     @6584
+        seq_item_port      uvm_seq_item_pull_port         -     @6535
+      monitor              pcie_gen5_6_tl_monitor         -     @6564
+        ap                 uvm_analysis_port              -     @6663
+      sequencer            uvm_sequencer                  -     @5848
+        rsp_export         uvm_analysis_export            -     @5906
+        seq_item_export    uvm_seq_item_pull_imp          -     @6454
+        arbitration_queue  array                          0     -    
+        lock_queue         array                          0     -    
+        num_last_reqs      integral                       32    'd1  
+        num_last_rsps      integral                       32    'd1  
+    vseqr                  pcie_gen5_6_virtual_sequencer  -     @3163
+      rsp_export           uvm_analysis_export            -     @3222
+      seq_item_export      uvm_seq_item_pull_imp          -     @3772
+      arbitration_queue    array                          0     -    
+      lock_queue           array                          0     -    
+      num_last_reqs        integral                       32    'd1  
+      num_last_rsps        integral                       32    'd1  
+---------------------------------------------------------------------
+
+UVM_INFO ../tb/pkg/../env/pcie_gen5_6_scoreboard.sv(58) @ 38000: uvm_test_top.env.scoreboard [SB] TL received type=TLP_NOP tag=0
+UVM_INFO ../tb/pkg/../monitors/pcie_gen5_6_tl_monitor.sv(71) @ 38000: uvm_test_top.env.tl_agent.monitor [TL_MON] type=TLP_NOP valid=0
+UVM_INFO ../tb/pkg/../env/pcie_gen5_6_scoreboard.sv(114) @ 39000: uvm_test_top.env.scoreboard [SB_PIPE] sym=PIPE_SYM_IDLE err=ERR_NONE
+UVM_INFO ../tb/pkg/../env/pcie_gen5_6_scoreboard.sv(114) @ 41000: uvm_test_top.env.scoreboard [SB_PIPE] sym=PIPE_SYM_IDLE err=ERR_NONE
+UVM_INFO ../tb/pkg/../env/pcie_gen5_6_scoreboard.sv(58) @ 42000: uvm_test_top.env.scoreboard [SB] TL received type=TLP_NOP tag=0
+UVM_INFO ../tb/pkg/../monitors/pcie_gen5_6_tl_monitor.sv(71) @ 42000: uvm_test_top.env.tl_agent.monitor [TL_MON] type=TLP_NOP valid=0
+UVM_INFO ../tb/pkg/../env/pcie_gen5_6_scoreboard.sv(114) @ 43000: uvm_test_top.env.scoreboard [SB_PIPE] sym=PIPE_SYM_IDLE err=ERR_NONE
+UVM_INFO ../tb/pkg/../env/pcie_gen5_6_scoreboard.sv(114) @ 45000: uvm_test_top.env.scoreboard [SB_PIPE] sym=PIPE_SYM_FLIT err=ERR_NONE
+UVM_INFO ../tb/pkg/../sequences/pcie_gen5_6_flit_mode_entry_seq.sv(79) @ 45000: uvm_test_top.env.vseqr@@s_flit_mode_entry [pcie_gen5_6_flit_mode_entry_directed_seq] FLIT MODE ENTRY LEGAL: speed=PCIE_GEN6_64P0 width=PCIE_WIDTH_X16 precoding=1 scrambling=1 scaled_fc=1
+UVM_INFO ../tb/pkg/../sequences/pcie_gen5_6_flit_mode_entry_seq.sv(231) @ 45000: uvm_test_top.env.vseqr@@s_flit_mode_entry [pcie_gen5_6_flit_mode_entry_directed_seq] DIRECTED FLIT MODE ENTRY: burst=4 corrupt_sds=0 bad_crc=0 speed=PCIE_GEN6_64P0 width=PCIE_WIDTH_X16 precoding=1 scrambling=1
+UVM_INFO ../tb/pkg/../sequences/pcie_gen5_6_flit_mode_entry_seq.sv(100) @ 45000: uvm_test_top.env.vseqr@@s_flit_mode_entry [pcie_gen5_6_flit_mode_entry_directed_seq] send_sds: nominal SDS 0x5d5d5d5d on lane 0
+UVM_INFO ../tb/pkg/../env/pcie_gen5_6_scoreboard.sv(58) @ 46000: uvm_test_top.env.scoreboard [SB] TL received type=TLP_NOP tag=0
+UVM_INFO ../tb/pkg/../monitors/pcie_gen5_6_tl_monitor.sv(71) @ 46000: uvm_test_top.env.tl_agent.monitor [TL_MON] type=TLP_NOP valid=0
+UVM_INFO ../tb/pkg/../env/pcie_gen5_6_scoreboard.sv(114) @ 47000: uvm_test_top.env.scoreboard [SB_PIPE] sym=PIPE_SYM_FLIT err=ERR_NONE
+UVM_INFO ../tb/pkg/../sequences/pcie_gen5_6_flit_mode_entry_seq.sv(133) @ 47000: uvm_test_top.env.vseqr@@s_flit_mode_entry [pcie_gen5_6_flit_mode_entry_directed_seq] send_flit_burst: count=4 active_lanes=16 force_bad_crc=0 speed=PCIE_GEN6_64P0
+UVM_INFO ../tb/pkg/../env/pcie_gen5_6_scoreboard.sv(114) @ 49000: uvm_test_top.env.scoreboard [SB_PIPE] sym=PIPE_SYM_FLIT err=ERR_NONE
+UVM_INFO ../tb/pkg/../env/pcie_gen5_6_scoreboard.sv(58) @ 50000: uvm_test_top.env.scoreboard [SB] TL received type=TLP_NOP tag=0
+UVM_INFO ../tb/pkg/../monitors/pcie_gen5_6_tl_monitor.sv(71) @ 50000: uvm_test_top.env.tl_agent.monitor [TL_MON] type=TLP_NOP valid=0
+UVM_INFO ../tb/pkg/../env/pcie_gen5_6_scoreboard.sv(114) @ 51000: uvm_test_top.env.scoreboard [SB_PIPE] sym=PIPE_SYM_FLIT err=ERR_NONE
+UVM_INFO ../tb/pkg/../env/pcie_gen5_6_scoreboard.sv(114) @ 53000: uvm_test_top.env.scoreboard [SB_PIPE] sym=PIPE_SYM_IDLE err=ERR_NONE
+UVM_INFO ../tb/pkg/../env/pcie_gen5_6_scoreboard.sv(58) @ 54000: uvm_test_top.env.scoreboard [SB] TL received type=TLP_NOP tag=0
+UVM_INFO ../tb/pkg/../monitors/pcie_gen5_6_tl_monitor.sv(71) @ 54000: uvm_test_top.env.tl_agent.monitor [TL_MON] type=TLP_NOP valid=0
+UVM_INFO ../tb/pkg/../env/pcie_gen5_6_scoreboard.sv(114) @ 55000: uvm_test_top.env.scoreboard [SB_PIPE] sym=PIPE_SYM_IDLE err=ERR_NONE
+UVM_INFO ../tb/pkg/../env/pcie_gen5_6_scoreboard.sv(114) @ 57000: uvm_test_top.env.scoreboard [SB_PIPE] sym=PIPE_SYM_IDLE err=ERR_NONE
+UVM_INFO ../tb/pkg/../env/pcie_gen5_6_scoreboard.sv(58) @ 58000: uvm_test_top.env.scoreboard [SB] TL received type=TLP_NOP tag=0
+UVM_INFO ../tb/pkg/../monitors/pcie_gen5_6_tl_monitor.sv(71) @ 58000: uvm_test_top.env.tl_agent.monitor [TL_MON] type=TLP_NOP valid=0
+UVM_INFO ../tb/pkg/../env/pcie_gen5_6_scoreboard.sv(114) @ 59000: uvm_test_top.env.scoreboard [SB_PIPE] sym=PIPE_SYM_IDLE err=ERR_NONE
+UVM_INFO ../tb/pkg/../env/pcie_gen5_6_scoreboard.sv(114) @ 61000: uvm_test_top.env.scoreboard [SB_PIPE] sym=PIPE_SYM_IDLE err=ERR_NONE
+UVM_INFO ../tb/pkg/../env/pcie_gen5_6_scoreboard.sv(58) @ 62000: uvm_test_top.env.scoreboard [SB] TL received type=TLP_NOP tag=0
+UVM_INFO ../tb/pkg/../monitors/pcie_gen5_6_tl_monitor.sv(71) @ 62000: uvm_test_top.env.tl_agent.monitor [TL_MON] type=TLP_NOP valid=0
+UVM_INFO ../tb/pkg/../env/pcie_gen5_6_scoreboard.sv(114) @ 63000: uvm_test_top.env.scoreboard [SB_PIPE] sym=PIPE_SYM_IDLE err=ERR_NONE
+UVM_INFO ../tb/pkg/../env/pcie_gen5_6_scoreboard.sv(114) @ 65000: uvm_test_top.env.scoreboard [SB_PIPE] sym=PIPE_SYM_IDLE err=ERR_NONE
+UVM_INFO ../tb/pkg/../env/pcie_gen5_6_scoreboard.sv(58) @ 66000: uvm_test_top.env.scoreboard [SB] TL received type=TLP_NOP tag=0
+UVM_INFO ../tb/pkg/../monitors/pcie_gen5_6_tl_monitor.sv(71) @ 66000: uvm_test_top.env.tl_agent.monitor [TL_MON] type=TLP_NOP valid=0
+UVM_INFO ../tb/pkg/../env/pcie_gen5_6_scoreboard.sv(114) @ 67000: uvm_test_top.env.scoreboard [SB_PIPE] sym=PIPE_SYM_IDLE err=ERR_NONE
+UVM_INFO ../tb/pkg/../env/pcie_gen5_6_scoreboard.sv(114) @ 69000: uvm_test_top.env.scoreboard [SB_PIPE] sym=PIPE_SYM_IDLE err=ERR_NONE
+UVM_INFO ../tb/pkg/../env/pcie_gen5_6_scoreboard.sv(58) @ 70000: uvm_test_top.env.scoreboard [SB] TL received type=TLP_NOP tag=0
+UVM_INFO ../tb/pkg/../monitors/pcie_gen5_6_tl_monitor.sv(71) @ 70000: uvm_test_top.env.tl_agent.monitor [TL_MON] type=TLP_NOP valid=0
+UVM_INFO ../tb/pkg/../env/pcie_gen5_6_scoreboard.sv(114) @ 71000: uvm_test_top.env.scoreboard [SB_PIPE] sym=PIPE_SYM_IDLE err=ERR_NONE
+UVM_INFO ../tb/pkg/../env/pcie_gen5_6_scoreboard.sv(114) @ 73000: uvm_test_top.env.scoreboard [SB_PIPE] sym=PIPE_SYM_IDLE err=ERR_NONE
+UVM_INFO ../tb/pkg/../env/pcie_gen5_6_scoreboard.sv(58) @ 74000: uvm_test_top.env.scoreboard [SB] TL received type=TLP_NOP tag=0
+UVM_INFO ../tb/pkg/../monitors/pcie_gen5_6_tl_monitor.sv(71) @ 74000: uvm_test_top.env.tl_agent.monitor [TL_MON] type=TLP_NOP valid=0
+UVM_INFO ../tb/pkg/../env/pcie_gen5_6_scoreboard.sv(114) @ 75000: uvm_test_top.env.scoreboard [SB_PIPE] sym=PIPE_SYM_IDLE err=ERR_NONE
+UVM_INFO ../tb/pkg/../env/pcie_gen5_6_scoreboard.sv(114) @ 77000: uvm_test_top.env.scoreboard [SB_PIPE] sym=PIPE_SYM_IDLE err=ERR_NONE
+UVM_INFO ../tb/pkg/../env/pcie_gen5_6_scoreboard.sv(58) @ 78000: uvm_test_top.env.scoreboard [SB] TL received type=TLP_NOP tag=0
+UVM_INFO ../tb/pkg/../monitors/pcie_gen5_6_tl_monitor.sv(71) @ 78000: uvm_test_top.env.tl_agent.monitor [TL_MON] type=TLP_NOP valid=0
+UVM_INFO ../tb/pkg/../env/pcie_gen5_6_scoreboard.sv(114) @ 79000: uvm_test_top.env.scoreboard [SB_PIPE] sym=PIPE_SYM_IDLE err=ERR_NONE
+UVM_INFO ../tb/pkg/../env/pcie_gen5_6_scoreboard.sv(114) @ 81000: uvm_test_top.env.scoreboard [SB_PIPE] sym=PIPE_SYM_IDLE err=ERR_NONE
+UVM_INFO ../tb/pkg/../env/pcie_gen5_6_scoreboard.sv(58) @ 82000: uvm_test_top.env.scoreboard [SB] TL received type=TLP_NOP tag=0
+UVM_INFO ../tb/pkg/../monitors/pcie_gen5_6_tl_monitor.sv(71) @ 82000: uvm_test_top.env.tl_agent.monitor [TL_MON] type=TLP_NOP valid=0
+UVM_INFO ../tb/pkg/../env/pcie_gen5_6_scoreboard.sv(114) @ 83000: uvm_test_top.env.scoreboard [SB_PIPE] sym=PIPE_SYM_IDLE err=ERR_NONE
+UVM_INFO ../tb/pkg/../env/pcie_gen5_6_scoreboard.sv(114) @ 85000: uvm_test_top.env.scoreboard [SB_PIPE] sym=PIPE_SYM_IDLE err=ERR_NONE
+UVM_INFO ../tb/pkg/../env/pcie_gen5_6_scoreboard.sv(58) @ 86000: uvm_test_top.env.scoreboard [SB] TL received type=TLP_NOP tag=0
+UVM_INFO ../tb/pkg/../monitors/pcie_gen5_6_tl_monitor.sv(71) @ 86000: uvm_test_top.env.tl_agent.monitor [TL_MON] type=TLP_NOP valid=0
+UVM_INFO ../tb/pkg/../env/pcie_gen5_6_scoreboard.sv(114) @ 87000: uvm_test_top.env.scoreboard [SB_PIPE] sym=PIPE_SYM_IDLE err=ERR_NONE
+UVM_INFO ../tb/pkg/../sequences/pcie_gen5_6_flit_mode_entry_seq.sv(171) @ 89000: uvm_test_top.env.vseqr@@s_flit_mode_entry [pcie_gen5_6_flit_mode_entry_directed_seq] send_fc_update_after_sds: seq=4 flit_mode=1 scaled_fc=1
+UVM_INFO ../tb/pkg/../env/pcie_gen5_6_scoreboard.sv(114) @ 89000: uvm_test_top.env.scoreboard [SB_PIPE] sym=PIPE_SYM_IDLE err=ERR_NONE
+UVM_INFO ../tb/pkg/../env/pcie_gen5_6_scoreboard.sv(58) @ 90000: uvm_test_top.env.scoreboard [SB] TL received type=TLP_NOP tag=0
+UVM_INFO ../tb/pkg/../monitors/pcie_gen5_6_tl_monitor.sv(71) @ 90000: uvm_test_top.env.tl_agent.monitor [TL_MON] type=TLP_NOP valid=0
+UVM_INFO ../tb/pkg/../env/pcie_gen5_6_scoreboard.sv(114) @ 91000: uvm_test_top.env.scoreboard [SB_PIPE] sym=PIPE_SYM_IDLE err=ERR_NONE
+UVM_INFO ../tb/pkg/../env/pcie_gen5_6_scoreboard.sv(114) @ 93000: uvm_test_top.env.scoreboard [SB_PIPE] sym=PIPE_SYM_IDLE err=ERR_NONE
+UVM_INFO ../tb/pkg/../env/pcie_gen5_6_scoreboard.sv(58) @ 94000: uvm_test_top.env.scoreboard [SB] TL received type=TLP_NOP tag=0
+UVM_INFO ../tb/pkg/../monitors/pcie_gen5_6_tl_monitor.sv(71) @ 94000: uvm_test_top.env.tl_agent.monitor [TL_MON] type=TLP_NOP valid=0
+UVM_INFO ../tb/pkg/../env/pcie_gen5_6_scoreboard.sv(114) @ 95000: uvm_test_top.env.scoreboard [SB_PIPE] sym=PIPE_SYM_IDLE err=ERR_NONE
+UVM_INFO ../tb/pkg/../env/pcie_gen5_6_scoreboard.sv(114) @ 97000: uvm_test_top.env.scoreboard [SB_PIPE] sym=PIPE_SYM_IDLE err=ERR_NONE
+UVM_INFO ../tb/pkg/../env/pcie_gen5_6_scoreboard.sv(58) @ 98000: uvm_test_top.env.scoreboard [SB] TL received type=TLP_NOP tag=0
+UVM_INFO ../tb/pkg/../monitors/pcie_gen5_6_tl_monitor.sv(71) @ 98000: uvm_test_top.env.tl_agent.monitor [TL_MON] type=TLP_NOP valid=0
+UVM_INFO /home/install/XCELIUM2209/tools/methodology/UVM/CDNS-1.1d/sv/src/base/uvm_objection.svh(1268) @ 98000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO ../tb/pkg/../env/pcie_gen5_6_scoreboard.sv(137) @ 98000: uvm_test_top.env.scoreboard [pcie_gen5_6_scoreboard] posted=0 nonposted=0 completions=0
+
+--- UVM Report catcher Summary ---
+
+
+Number of demoted UVM_FATAL reports  :    0
+Number of demoted UVM_ERROR reports  :    0
+Number of demoted UVM_WARNING reports:    0
+Number of caught UVM_FATAL reports   :    0
+Number of caught UVM_ERROR reports   :    0
+Number of caught UVM_WARNING reports :    0
+
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :   71
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[RNTST]     1
+[SB]    16
+[SB_PIPE]    30
+[TEST_DONE]     1
+[TL_MON]    16
+[UVMTOP]     1
+[pcie_gen5_6_flit_mode_entry_directed_seq]     5
+[pcie_gen5_6_scoreboard]     1
+Simulation complete via $finish(1) at time 98 NS + 50
+/home/install/XCELIUM2209/tools/methodology/UVM/CDNS-1.1d/sv/src/base/uvm_root.svh:457     $finish;
+xcelium> 
+xcelium> exit
+xmsim: Memory Usage - Final: 133.0M, Peak: 151.6M, Peak virtual: 780.5M
+xmsim: Main Thread CPU Usage - 0.0s system + 0.1s user = 0.2s total
+xmsim: CPU Usage - 0.0s system + 0.0s user = 0.1s total (0.1s, 59.4% cpu)
+TOOL:	xrun(64)	22.09-s003: Exiting on Jul 22, 2026 at 05:59:57 EDT  (total: 00:00:02)
